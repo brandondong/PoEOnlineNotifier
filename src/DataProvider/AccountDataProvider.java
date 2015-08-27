@@ -8,15 +8,15 @@ import java.net.URL;
  */
 public class AccountDataProvider extends AbstractHttpDataProvider {
 
-    private String accountName;
-
-    public AccountDataProvider(String accountName) {
-        this.accountName = accountName;
+    public AccountDataProvider(String accountName, String leagueName) {
+        name = accountName;
+        league = leagueName;
     }
 
     @Override
     protected URL getURL() throws MalformedURLException {
-        String request = "http://api.exiletools.com/ladder?accountName=" + accountName;
+        String request = "http://api.exiletools.com/ladder?" + "league=" + league +
+                "&accountName=" + name;
         return new URL(request);
     }
 }

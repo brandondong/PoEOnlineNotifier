@@ -15,6 +15,8 @@ import java.net.URL;
  */
 public abstract class AbstractHttpDataProvider {
     protected HttpURLConnection conn;
+    protected String name;
+    protected String league;
 
     public AbstractHttpDataProvider() {
         conn = null;
