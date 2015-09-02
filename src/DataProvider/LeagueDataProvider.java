@@ -10,6 +10,6 @@ public class LeagueDataProvider extends AbstractHttpDataProvider {
 
     @Override
     protected URL getURL() throws MalformedURLException {
-        return new URL("http://api.pathofexile.com/leagues");
+        return new URL("http://api.exiletools.com/ladder?activeleagues=1");
     }
 }

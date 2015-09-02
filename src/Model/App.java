@@ -19,8 +19,7 @@ public class App {
         CharacterDataProvider test = new CharacterDataProvider("WTBsurvivability", "hardcore");
         System.out.println(CharacterParser.getAccountNameFromCharacter(test.dataSourceToString()));
         LeagueDataProvider test2 = new LeagueDataProvider();
-        List<String> test3 = LeagueParser.parseLeagueData(test2.dataSourceToString());
-        for (String next : test3) {
+        for (String next : LeagueParser.parseLeagueData(test2.dataSourceToString())) {
             System.out.println(next);
         }
     }

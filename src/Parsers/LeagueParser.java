@@ -1,10 +1,10 @@
 package Parsers;
 
-import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
 /**
@@ -13,13 +13,14 @@ import java.util.List;
 public class LeagueParser {
 
     public static List<String> parseLeagueData(String jsonResponse) throws JSONException {
-        JSONArray leagues = new JSONArray(jsonResponse);
-        List<String> listOfLeagues = new ArrayList<>();
+        List<String> leagues = new ArrayList<>();
+        JSONObject leagueData = new JSONObject(jsonResponse);
 
-        for (int i = 0; i < leagues.length(); i++) {
-            JSONObject next = leagues.getJSONObject(i);
-            listOfLeagues.add(next.getString("id"));
+        Iterator<String> keys = leagueData.keys();
+        while (keys.hasNext()) {
+            String next = keys.next();
+            leagues.add(leagueData.getString(next));
         }
-        return listOfLeagues;
+        return leagues;
     }
 }
