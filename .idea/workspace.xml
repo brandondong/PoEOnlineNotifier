@@ -29,19 +29,13 @@
         <entry file="file://$PROJECT_DIR$/src/Model/Account.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="12" column="33" selection-start-line="12" selection-start-column="33" selection-end-line="12" selection-end-column="33" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AbstractHttpDataProvider.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/DataProvider/AbstractHttpDataProvider.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="18" column="28" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
+              <caret line="23" column="35" selection-start-line="23" selection-start-column="35" selection-end-line="23" selection-end-column="35" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#876#877#0" expanded="true" />
+                <element signature="e#907#908#0" expanded="true" />
+                <element signature="e#945#946#0" expanded="true" />
+                <element signature="e#979#980#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -71,13 +65,15 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="App.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="App.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Model/App.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="22" column="35" selection-start-line="22" selection-start-column="35" selection-end-line="22" selection-end-column="35" />
+            <state vertical-scroll-proportion="0.8011494">
+              <caret line="41" column="33" selection-start-line="41" selection-start-column="33" selection-end-line="41" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#743#744#0" expanded="true" />
+                <element signature="e#787#788#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -87,17 +83,17 @@
         <entry file="file://$PROJECT_DIR$/src/Parsers/CharacterParser.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="12" column="59" selection-start-line="12" selection-start-column="59" selection-end-line="12" selection-end-column="59" />
+              <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LeagueParser.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="LeagueParser.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Parsers/LeagueParser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.01954023">
-              <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="18" column="50" selection-start-line="18" selection-start-column="50" selection-end-line="18" selection-end-column="50" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -122,14 +118,15 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/Model/Account.java" />
-        <option value="$PROJECT_DIR$/src/Parsers/CharacterParser.java" />
         <option value="$PROJECT_DIR$/src/DataProvider/AbstractHttpDataProvider.java" />
         <option value="$PROJECT_DIR$/src/DataProvider/AccountDataProvider.java" />
         <option value="$PROJECT_DIR$/src/DataProvider/CharacterDataProvider.java" />
         <option value="$PROJECT_DIR$/src/DataProvider/LeagueDataProvider.java" />
-        <option value="$PROJECT_DIR$/src/Model/App.java" />
         <option value="$PROJECT_DIR$/src/Parsers/LeagueParser.java" />
+        <option value="$PROJECT_DIR$/src/Parsers/CharacterParser.java" />
+        <option value="$PROJECT_DIR$/src/Model/Exceptions/NoCharacterExistsException.java" />
+        <option value="$PROJECT_DIR$/src/Model/Account.java" />
+        <option value="$PROJECT_DIR$/src/Model/App.java" />
       </list>
     </option>
   </component>
@@ -186,10 +183,6 @@
               <option name="myItemId" value="PoEOnlineNotifier" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewLibrariesNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -216,6 +209,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Model" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PoEOnlineNotifier" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PoEOnlineNotifier" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Model" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Exceptions" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -445,11 +456,47 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/Model/App.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="22" column="35" selection-start-line="22" selection-start-column="35" selection-end-line="22" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#743#744#0" expanded="true" />
+            <element signature="e#787#788#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Parsers/CharacterParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="12" column="59" selection-start-line="12" selection-start-column="59" selection-end-line="12" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Parsers/LeagueParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Model/Account.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="12" column="33" selection-start-line="12" selection-start-column="33" selection-end-line="12" selection-end-column="33" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#876#877#0" expanded="true" />
+            <element signature="e#907#908#0" expanded="true" />
+            <element signature="e#945#946#0" expanded="true" />
+            <element signature="e#979#980#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -489,6 +536,8 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#743#744#0" expanded="true" />
+            <element signature="e#787#788#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -515,7 +564,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="12" column="33" selection-start-line="12" selection-start-column="33" selection-end-line="12" selection-end-column="33" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#876#877#0" expanded="true" />
+            <element signature="e#907#908#0" expanded="true" />
+            <element signature="e#945#946#0" expanded="true" />
+            <element signature="e#979#980#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -555,6 +610,8 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#743#744#0" expanded="true" />
+            <element signature="e#787#788#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -581,7 +638,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="12" column="33" selection-start-line="12" selection-start-column="33" selection-end-line="12" selection-end-column="33" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#876#877#0" expanded="true" />
+            <element signature="e#907#908#0" expanded="true" />
+            <element signature="e#945#946#0" expanded="true" />
+            <element signature="e#979#980#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -628,6 +691,8 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#743#744#0" expanded="true" />
+            <element signature="e#787#788#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -644,7 +709,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="12" column="33" selection-start-line="12" selection-start-column="33" selection-end-line="12" selection-end-column="33" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#876#877#0" expanded="true" />
+            <element signature="e#907#908#0" expanded="true" />
+            <element signature="e#945#946#0" expanded="true" />
+            <element signature="e#979#980#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -681,6 +752,8 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#743#744#0" expanded="true" />
+            <element signature="e#787#788#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -697,7 +770,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="12" column="33" selection-start-line="12" selection-start-column="33" selection-end-line="12" selection-end-column="33" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#876#877#0" expanded="true" />
+            <element signature="e#907#908#0" expanded="true" />
+            <element signature="e#945#946#0" expanded="true" />
+            <element signature="e#979#980#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -727,6 +806,8 @@
           <caret line="14" column="78" selection-start-line="14" selection-start-column="78" selection-end-line="14" selection-end-column="78" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#743#744#0" expanded="true" />
+            <element signature="e#787#788#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -750,7 +831,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="12" column="33" selection-start-line="12" selection-start-column="33" selection-end-line="12" selection-end-column="33" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#876#877#0" expanded="true" />
+            <element signature="e#907#908#0" expanded="true" />
+            <element signature="e#945#946#0" expanded="true" />
+            <element signature="e#979#980#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -788,17 +875,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/java-json.jar/java-json.jar!/org/json/JSONObject.java">
+    <entry file="file://$PROJECT_DIR$/src/DataProvider/AccountDataProvider.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33275262">
-          <caret line="719" column="21" selection-start-line="719" selection-start-column="21" selection-end-line="719" selection-end-column="26" />
+        <state vertical-scroll-proportion="0.31264368">
+          <caret line="17" column="8" selection-start-line="17" selection-start-column="8" selection-end-line="18" selection-end-column="39" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Model/Account.java">
+    <entry file="jar://$PROJECT_DIR$/java-json.jar/java-json.jar!/org/json/JSONObject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33333334">
+          <caret line="719" column="21" selection-start-line="719" selection-start-column="21" selection-end-line="719" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Model/Exceptions/NoCharacterExistsException.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="12" column="33" selection-start-line="12" selection-start-column="33" selection-end-line="12" selection-end-column="33" />
+          <caret line="5" column="57" selection-start-line="5" selection-start-column="57" selection-end-line="5" selection-end-column="57" />
           <folding />
         </state>
       </provider>
@@ -813,19 +909,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/DataProvider/AccountDataProvider.java">
+    <entry file="file://$PROJECT_DIR$/src/Model/Account.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="17" column="8" selection-start-line="17" selection-start-column="8" selection-end-line="18" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/DataProvider/LeagueDataProvider.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="12" column="75" selection-start-line="12" selection-start-column="75" selection-end-line="12" selection-end-column="75" />
+          <caret line="23" column="35" selection-start-line="23" selection-start-column="35" selection-end-line="23" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#876#877#0" expanded="true" />
+            <element signature="e#907#908#0" expanded="true" />
+            <element signature="e#945#946#0" expanded="true" />
+            <element signature="e#979#980#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -840,10 +933,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Model/App.java">
+    <entry file="file://$PROJECT_DIR$/src/DataProvider/LeagueDataProvider.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="22" column="35" selection-start-line="22" selection-start-column="35" selection-end-line="22" selection-end-column="35" />
+          <caret line="12" column="75" selection-start-line="12" selection-start-column="75" selection-end-line="12" selection-end-column="75" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Parsers/LeagueParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="18" column="50" selection-start-line="18" selection-start-column="50" selection-end-line="18" selection-end-column="50" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -853,17 +956,19 @@
     <entry file="file://$PROJECT_DIR$/src/Parsers/CharacterParser.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="12" column="59" selection-start-line="12" selection-start-column="59" selection-end-line="12" selection-end-column="59" />
+          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Parsers/LeagueParser.java">
+    <entry file="file://$PROJECT_DIR$/src/Model/App.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.01954023">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.8011494">
+          <caret line="41" column="33" selection-start-line="41" selection-start-column="33" selection-end-line="41" selection-end-column="33" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#743#744#0" expanded="true" />
+            <element signature="e#787#788#0" expanded="true" />
           </folding>
         </state>
       </provider>
