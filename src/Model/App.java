@@ -1,12 +1,8 @@
 package Model;
 
-import DataProvider.AccountDataProvider;
-import DataProvider.CharacterDataProvider;
 import DataProvider.LeagueDataProvider;
 import Model.Exceptions.NoCharacterExistsException;
-import Parsers.CharacterParser;
 import Parsers.LeagueParser;
-import org.json.JSONException;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -33,11 +29,19 @@ public class App {
         accounts = new ArrayList<>();
     }
 
+    public void addAccount(String charName) throws NoCharacterExistsException {
+        Account toAdd = new Account(charName);
+        if (!accounts.contains(toAdd)) {
+            accounts.add(toAdd);
+        }
+    }
+
     public static void main(String[] args) throws IOException {
         Account test = null;
         try {
-            test = new Account("Exaltonasdfasdf");
+            test = new Account("Havoc");
             System.out.println(test.getAccountName());
+            System.out.println(test.isOnline());
         } catch (NoCharacterExistsException e) {
             System.out.println("No such character exists");
         }
