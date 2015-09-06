@@ -9,7 +9,7 @@ import Parsers.CharacterParser;
 /**
  * Created by Brandon on 2015-08-26.
  */
-public class Account extends Observable {
+public class Account {
 
     private String charName;
     private String accountName;
@@ -18,7 +18,7 @@ public class Account extends Observable {
     public Account(String charName) throws NoCharacterExistsException {
         this.charName = charName;
 
-        for (String league : App.LEAGUE_NAMES) {
+        for (String league : App.getLeagues()) {
             try {
                 String response = new CharacterDataProvider(charName, league).dataSourceToString();
                 accountName = CharacterParser.getAccountNameFromCharacter(response);
@@ -34,18 +34,19 @@ public class Account extends Observable {
     }
 
     // Modifies: this
-    // Effects: updates the online status and notifies observers if the status was changed
-    public void updateStatus() {
+    // Effects: updates the online status and returns true if the status was changed
+    public boolean updateStatus() {
         boolean newStatus = findOnlineStatus();
-        if (!isOnline == newStatus) {
+        if (isOnline != newStatus) {
             isOnline = newStatus;
-            notifyObservers(charName, isOnline);
+            return true;
         }
+        return false;
     }
 
     // Effects: returns the online status of this account
     private boolean findOnlineStatus() {
-        for (String league : App.LEAGUE_NAMES) {
+        for (String league : App.getLeagues()) {
             try {
                 String response = new AccountDataProvider(accountName, league).dataSourceToString();
                 if (AccountParser.isAccountOnline(response)) {

@@ -11,17 +11,9 @@ import java.util.List;
 /**
  * Created by Brandon on 2015-08-27.
  */
-public class App {
+public class App extends Observable {
 
     public static List<String> LEAGUE_NAMES;
-
-    static {
-        try {
-            LEAGUE_NAMES = LeagueParser.parseLeagueData(new LeagueDataProvider().dataSourceToString());
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-    }
 
     private List<Account> accounts;
 
@@ -29,6 +21,8 @@ public class App {
         accounts = new ArrayList<>();
     }
 
+    // Modifies: this
+    // Effects: adds the specified account, throws NoCharacterExistsException if account is invalid
     public void addAccount(String charName) throws NoCharacterExistsException {
         Account toAdd = new Account(charName);
         if (!accounts.contains(toAdd)) {
@@ -36,14 +30,48 @@ public class App {
         }
     }
 
+    public void removeAccount(Account a) {
+        accounts.remove(a);
+    }
+
+    // Modifies: this
+    // Effects: updates each account, notifying observers if needed
+    public void update() {
+        for (Account next : accounts) {
+            if (next.updateStatus()) {
+                notifyObservers(next.getCharName(), next.isOnline());
+            }
+        }
+    }
+
+    public static List<String> getLeagues() {
+        if (LEAGUE_NAMES == null) {
+            try {
+                LEAGUE_NAMES = LeagueParser.parseLeagueData(new LeagueDataProvider().dataSourceToString());
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
+        return LEAGUE_NAMES;
+    }
+
+    public List<Account> getAccounts() {
+        return accounts;
+    }
+
     public static void main(String[] args) throws IOException {
-        Account test = null;
+        App appTest = new App();
         try {
-            test = new Account("Havoc");
-            System.out.println(test.getAccountName());
-            System.out.println(test.isOnline());
+            appTest.addAccount("Havoc");
+            appTest.addAccount("WTBsurvivability");
+            appTest.addAccount("---");
         } catch (NoCharacterExistsException e) {
             System.out.println("No such character exists");
+        } finally {
+            for (Account next : appTest.getAccounts()) {
+                System.out.println(next.getAccountName());
+                System.out.println(next.isOnline());
+            }
         }
     }
 }

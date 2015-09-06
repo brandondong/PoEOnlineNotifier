@@ -18,6 +18,10 @@ public abstract class Observable {
         observers.add(o);
     }
 
+    public void removeObserver(Observer o) {
+        observers.remove(o);
+    }
+
     public void notifyObservers(String charName, boolean status) {
         for (Observer next : observers) {
             next.update(charName, status);
