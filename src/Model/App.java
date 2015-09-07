@@ -3,6 +3,7 @@ package Model;
 import DataProvider.LeagueDataProvider;
 import Model.Exceptions.NoCharacterExistsException;
 import Parsers.LeagueParser;
+import UI.StatusBar;
 
 import java.io.IOException;
 import java.util.ArrayList;
