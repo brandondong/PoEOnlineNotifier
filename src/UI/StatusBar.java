@@ -10,27 +10,33 @@ import java.awt.*;
  */
 public class StatusBar extends JPanel {
 
-    private static final int WIDTH = 130;
+    private static final int WIDTH = 200;
     private static final int HEIGHT = 30;
 
     private Account account;
+    private JLabel status;
 
     public StatusBar(Account account) {
         this.account = account;
+        status = new JLabel("Filler");
         setPreferredSize(new Dimension(WIDTH, HEIGHT));
         setBackground(Color.LIGHT_GRAY);
-        add(new JLabel(account.getCharName()));
+        setLayout(new FlowLayout(FlowLayout.LEFT));
     }
 
     @Override
     public void paintComponent(Graphics g) {
         super.paintComponent(g);
+        remove(status);
 
+        ImageIcon icon;
         if (account.isOnline()) {
-            g.setColor(Color.GREEN);
+            icon = new ImageIcon("online.png");
         } else {
-            g.setColor(Color.RED);
+            icon = new ImageIcon("offline.png");
         }
-        g.fillOval(100, 0, 30, 30);
+        status = new JLabel(account.getCharName(), icon, JLabel.LEFT);
+        add(status);
+        validate();
     }
 }

@@ -60,19 +60,4 @@ public class App extends Observable {
         return accounts;
     }
 
-    public static void main(String[] args) throws IOException {
-        App appTest = new App();
-        try {
-            appTest.addAccount("Havoc");
-            appTest.addAccount("WTBsurvivability");
-            appTest.addAccount("---");
-        } catch (NoCharacterExistsException e) {
-            System.out.println("No such character exists");
-        } finally {
-            for (Account next : appTest.getAccounts()) {
-                System.out.println(next.getAccountName());
-                System.out.println(next.isOnline());
-            }
-        }
-    }
 }
