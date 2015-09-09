@@ -3,6 +3,7 @@ package UI;
 import Model.Account;
 import Model.App;
 import Model.Exceptions.NoCharacterExistsException;
+import Observers.TrayNotification;
 
 import javax.swing.*;
 import java.awt.*;
@@ -47,6 +48,9 @@ public class AppUI extends JFrame {
     }
 
     public static void main(String[] args) {
+        //new AppUI();
+        TrayNotification notify = new TrayNotification();
+        notify.update("Havoc", false);
         new AppUI();
     }
 }
