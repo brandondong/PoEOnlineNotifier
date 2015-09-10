@@ -41,6 +41,8 @@ public class AppUI extends JFrame {
     public void removeBar(StatusBar bar) {
         remove(bar);
         app.removeAccount(bar.getAccount());
+        repaint();
+        validate();
     }
 
     // Modifies: this
