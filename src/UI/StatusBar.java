@@ -15,10 +15,12 @@ public class StatusBar extends JPanel {
 
     private Account account;
     private JLabel status;
+    private AppUI appUI;
 
-    public StatusBar(Account account) {
+    public StatusBar(Account account, AppUI appUI) {
         this.account = account;
         status = new JLabel("Filler");
+        this.appUI = appUI;
         setPreferredSize(new Dimension(WIDTH, HEIGHT));
         setBackground(Color.LIGHT_GRAY);
         setLayout(new FlowLayout(FlowLayout.LEFT));
@@ -38,5 +40,9 @@ public class StatusBar extends JPanel {
         status = new JLabel(account.getCharName(), icon, JLabel.LEFT);
         add(status);
         validate();
+    }
+
+    public Account getAccount() {
+        return account;
     }
 }

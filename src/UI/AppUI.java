@@ -18,7 +18,6 @@ public class AppUI extends JFrame {
     public static final int TIME_TO_UPDATE = 60000;
 
     private App app;
-    private List<StatusBar> bars;
     private boolean keepRunning;
 
     public AppUI() {
@@ -27,10 +26,9 @@ public class AppUI extends JFrame {
         setUndecorated(true);
 
         app = new App();
-        bars = new ArrayList<>();
         keepRunning = false;
         try {
-            add(new StatusBar(new Account("WTBsurvivability")));
+            add(new StatusBar(new Account("WTBsurvivability"), this));
         } catch (NoCharacterExistsException e) {
             e.printStackTrace();
         }
@@ -38,6 +36,11 @@ public class AppUI extends JFrame {
         pack();
         centreOnScreen();
         setVisible(true);
+    }
+
+    public void removeBar(StatusBar bar) {
+        remove(bar);
+        app.removeAccount(bar.getAccount());
     }
 
     // Modifies: this
