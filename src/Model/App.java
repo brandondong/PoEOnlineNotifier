@@ -23,12 +23,13 @@ public class App extends Observable {
     }
 
     // Modifies: this
-    // Effects: adds the specified account, throws NoCharacterExistsException if account is invalid
-    public void addAccount(String charName) throws NoCharacterExistsException {
+    // Effects: adds and returns the specified account, throws NoCharacterExistsException if account is invalid
+    public Account addAccount(String charName) throws NoCharacterExistsException {
         Account toAdd = new Account(charName);
         if (!accounts.contains(toAdd)) {
             accounts.add(toAdd);
         }
+        return toAdd;
     }
 
     public void removeAccount(Account a) {
