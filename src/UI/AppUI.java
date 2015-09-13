@@ -59,6 +59,18 @@ public class AppUI extends JFrame implements Observer {
         validate();
     }
 
+    private void runBackground() {
+        keepRunning = true;
+        while (keepRunning) {
+            try {
+                wait(TIME_TO_UPDATE);
+            } catch (InterruptedException e) {
+                System.out.println("Unexpected interruption");
+            }
+            app.update();
+        }
+    }
+
     // Modifies: this
     // Effects: location of frame is set so frame is centred on desktop
     private void centreOnScreen() {
