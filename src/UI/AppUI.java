@@ -79,7 +79,6 @@ public class AppUI extends JFrame implements Observer {
     }
 
     public static void main(String[] args) {
-        //new AppUI();
         TrayNotification notify = new TrayNotification();
         notify.update("Havoc", false);
         new AppUI();
