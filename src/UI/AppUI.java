@@ -8,15 +8,18 @@ import Observers.TrayNotification;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 /**
  * Created by Brandon on 2015-09-06.
  */
 public class AppUI extends JFrame implements Observer {
 
-    public static final int TIME_TO_UPDATE = 60000;
+    public static final int TIME_TO_UPDATE = 2;
 
     private App app;
     private boolean keepRunning;
@@ -30,6 +33,23 @@ public class AppUI extends JFrame implements Observer {
         app = new App();
         app.addObserver(this);
         keepRunning = false;
+
+        JButton start = new JButton("START");
+        start.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                runBackground();
+            }
+        });
+        JButton stop = new JButton("STOP");
+        stop.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                keepRunning = false;
+            }
+        });
+        add(start);
+        add(stop);
         try {
             addAccount("WTBsurvivability");
             addAccount("Havoc");
@@ -63,7 +83,7 @@ public class AppUI extends JFrame implements Observer {
         keepRunning = true;
         while (keepRunning) {
             try {
-                wait(TIME_TO_UPDATE);
+                TimeUnit.MINUTES.sleep(TIME_TO_UPDATE);
             } catch (InterruptedException e) {
                 System.out.println("Unexpected interruption");
             }
